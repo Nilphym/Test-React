@@ -7,7 +7,7 @@ const SpeedSelector = ({ setSpeed, types }) => {
         Speed
       </label>
       <select
-        onChange={(evt) => setSpeed(evt.target.value)}
+        onChange={(evt) => setSpeed(parseFloat(evt.target.value))}
         name="type"
         id="type"
       >
